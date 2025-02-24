@@ -14,7 +14,7 @@ const works = [
       imgSrc: './project-1.jpg',
       title: 'Full stack music app',
       tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://www.youtube.com/'
+      projectLink: 'https://sshyamsundar6887.github.io/PF/#'
     },
     {
       imgSrc: './project-2.jpg',
