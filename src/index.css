@@ -208,7 +208,7 @@ body {
 
 #bdy:target #main #moon {
   background: #F6D602;
-  border: 3px solid #f5eb71;
+  border: 6px solid #f5eb71;
 }
 
 #bdy:target #main #moon .spots {
@@ -219,7 +219,7 @@ body {
 
 #bdy:target #main #cover {
   background: #F7F7F7;
-  transform: translate(42px, -92px);
+  transform: translate(62px, -92px);
 }
 
 #cover {
