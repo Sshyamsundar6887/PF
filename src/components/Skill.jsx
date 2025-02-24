@@ -12,42 +12,42 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
     {
-      imgSrc: '/python.ico',
+      imgSrc: './python.ico',
       label: 'Python',
       desc: 'Programming Language'
     },
     {
-      imgSrc: '/java.ico',
+      imgSrc: './java.ico',
       label: 'Java',
       desc: 'Programming Language'
     },
     {
-      imgSrc: '/javascript.ico',
+      imgSrc: './javascript.ico',
       label: 'JavaScript',
       desc: 'Interaction'
     },
     {
-      imgSrc: '/nodejs.ico',
+      imgSrc: './nodejs.ico',
       label: 'NodeJS',
       desc: 'Web Server'
     },
     {
-      imgSrc: '/django.ico',
+      imgSrc: './django.ico',
       label: 'Django',
       desc: 'Web Framework'
     },
     {
-      imgSrc: '/mongodb.ico',
+      imgSrc: './mongodb.ico',
       label: 'MongoDB',
       desc: 'Database'
     },
     {
-      imgSrc: '/react.ico',
+      imgSrc: './react.ico',
       label: 'React',
       desc: 'Framework'
     },
     {
-      imgSrc: '/tailwindcss.ico',
+      imgSrc: './tailwindcss.ico',
       label: 'TailwindCSS',
       desc: 'User Interface'
     },

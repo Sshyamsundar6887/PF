@@ -120,7 +120,7 @@ const Footer = () => {
                  className="logo reveal-up"
                 >
                     <img
-                     src="/logo.ico"
+                     src="./logo.ico"
                      width={40}
                      height={40}
                      alt="Logo"
