@@ -11,16 +11,14 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: './project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://sshyamsundar6887.github.io/PF/#'
+      imgSrc: './lms1.jpg',
+      title: 'Library Management System',
+      tags: ['python','HTML5','CSS3','JavaScript','sqlite3'],
     },
     {
-      imgSrc: './project-2.jpg',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
-      projectLink: ''
+      imgSrc: './hotel.jpg',
+      title: 'Hotel Management System Application',
+      tags: ['Java','NetBeans','MySQL'],
     },
     {
       imgSrc: './project-3.jpg',
@@ -34,7 +32,7 @@ const works = [
       tags: ['Web-design', 'Development'],
       projectLink: ''
     },
-    {
+    /**{
       imgSrc: './project-5.jpg',
       title: 'eCommerce website',
       tags: ['eCommerce', 'Development'],
@@ -44,8 +42,8 @@ const works = [
       imgSrc: './project-6.jpg',
       title: 'vCard Personal portfolio',
       tags: ['Web-design', 'Development'],
-      projectLink: ''
-    },
+      projectLink: 'https://sshyamsundar6887.github.io/PF/#'
+    },*/
   ];
 
 

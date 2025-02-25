@@ -25,31 +25,31 @@ import ReviewCard from "./ReviewCard";
 
 const reviews = [
     {
-      content: 'Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.',
+      content: 'Enthusiastic and dedicated to his work. He is a quick learner and always ready to take on new challenges.',
       name: 'Sophia Ramirez',
       imgSrc: './people-1.jpg',
       company: 'PixelForge'
     },
     {
-      content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
+      content: 'Actively participated in group discussions and always ready to share his ideas.',
       name: 'Ethan Caldwell',
       imgSrc: './people-2.jpg',
       company: 'NexaWave'
     },
     {
-      content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
+      content: 'He is a great team player and always ready to help his friends.',
       name: 'Liam Bennett',
       imgSrc: './people-3.jpg',
       company: 'CodeCraft'
     },
     {
-      content: 'Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.',
+      content: 'Ready to learn about new concepts and technologies.',
       name: 'Noah Williams',
       imgSrc: './people-4.jpg',
       company: 'BrightWeb'
     },
     {
-      content: 'Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.',
+      content: 'Contributed to the project with his full dedication and commitment.',
       name: 'Ava Thompson',
       imgSrc: './people-5.jpg',
       company: 'TechMosaic'
@@ -84,7 +84,7 @@ const Review = () => {
     >
         <div className= "container">
             <h2 className="headline-2 mb-8 reveal-up">
-                FeedBack
+                What my friends say about me
             </h2>
             <div className="scrub-slide flex items-stretch gap-3 w-fit">
                 {reviews.map(({ content, name, imgSrc, company  },key)=>(
