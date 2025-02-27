@@ -75,7 +75,7 @@ const Contact = () => {
                          htmlFor="name"
                          className="label reveal-up"
                         >
-                            Name
+                            Your Name
                         </label>
                         <input
                          type="text"
@@ -93,7 +93,7 @@ const Contact = () => {
                          htmlFor="email"
                          className="label reveal-up"
                         >
-                            Email
+                           Your Email
                         </label>
                         <input
                          type="email"
@@ -101,7 +101,7 @@ const Contact = () => {
                          id="email"
                          autoComplete="email"
                          required
-                         placeholder="SHYAM@gmail.com"
+                         placeholder="SHYAM@example.com"
                          className="text-field reveal-up"
                         />
                     </div>
