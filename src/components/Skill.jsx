@@ -26,11 +26,11 @@ const skillItem = [
       label: 'JavaScript',
       desc: 'Interaction'
     },
-    {
+    /**{
       imgSrc: './nodejs.ico',
       label: 'NodeJS',
       desc: 'Web Server'
-    },
+    },*/
     {
       imgSrc: './django.ico',
       label: 'Django',
@@ -50,6 +50,11 @@ const skillItem = [
       imgSrc: './tailwindcss.ico',
       label: 'TailwindCSS',
       desc: 'User Interface'
+    },
+    {
+      imgSrc: './R.png',
+      label: 'R',
+      desc: 'Data Analysis'
     },
   ];
 

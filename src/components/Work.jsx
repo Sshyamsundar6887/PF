@@ -27,8 +27,8 @@ const works = [
     },
     {
       imgSrc: './project-4.jpg',
-      title: 'Real state website',
-      tags: ['Web-design', 'Development'],
+      title: 'Work in progress',
+      tags: [],
       projectLink: ''
     },
     /**{
