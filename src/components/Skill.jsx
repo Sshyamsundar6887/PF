@@ -68,11 +68,11 @@ const Skill = () => {
                 Essential Tools I Use
             </h2>
 
-            <p className="text-zinc-400 mt-3 mb-8 max-w-w[50ch] reveal-up">
+            <p className="mt-3 mb-8 max-w-[50ch] reveal-up" style={{ color: 'var(--color-text-secondary)' }}>
             Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
             </p>
 
-            <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+            <div className="skills-grid">
                 {
                      skillItem.map(({ imgSrc, label, desc }, key)=>(
                         <SkillCard

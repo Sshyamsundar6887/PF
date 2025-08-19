@@ -17,7 +17,7 @@ const ProjectCard = ({
     classes
 }) => {
   return (
-    <div className={"relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " + classes}>
+    <div className={"project-card " + classes}>
 
         <figure className="img-box aspect-square rounded-lg mg-4">
             <img
@@ -38,7 +38,11 @@ const ProjectCard = ({
                     {tags.map((label, key) => (
                         <span
                          key={key}
-                         className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                         className="h-8 text-sm grid items-center px-3 rounded-lg"
+                         style={{ 
+                           color: 'var(--color-text-tertiary)', 
+                           backgroundColor: 'var(--color-bg-accent)' 
+                         }}
                         >
                          {label}
                         </span>
@@ -46,7 +50,11 @@ const ProjectCard = ({
                 </div>
             </div>
 
-            <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
+            <div className="w-11 h-11 rounded-lg grid place-items-center shrink-0" 
+                 style={{ 
+                   backgroundColor: 'var(--color-accent)', 
+                   color: 'var(--color-text-inverse)' 
+                 }}>
                 <span
                  className="material-symbols-rounded"
                  aria-hidden="true"

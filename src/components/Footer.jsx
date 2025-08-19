@@ -60,7 +60,7 @@ const Footer = () => {
   return (
     <footer className="section">
         <div className="container">
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="grid gap-8 lg:grid-cols-2">
 
                 <div className="mb-10">
                     <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
@@ -83,7 +83,13 @@ const Footer = () => {
                                 <li key={key}>
                                     <a
                                      href={href}
-                                     className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                     className="block text-sm py-1 transition-colors reveal-up"
+                                     style={{ 
+                                       color: 'var(--color-text-tertiary)',
+                                       '--hover-color': 'var(--color-text-primary)'
+                                     }}
+                                     onMouseEnter={(e) => e.target.style.color = 'var(--color-text-primary)'}
+                                     onMouseLeave={(e) => e.target.style.color = 'var(--color-text-tertiary)'}
                                     >
                                         {label}
                                     </a>
@@ -101,7 +107,13 @@ const Footer = () => {
                                     <a
                                      href={href}
                                      target="_blank"
-                                     className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                     className="block text-sm py-1 transition-colors reveal-up"
+                                     style={{ 
+                                       color: 'var(--color-text-tertiary)',
+                                       '--hover-color': 'var(--color-text-primary)'
+                                     }}
+                                     onMouseEnter={(e) => e.target.style.color = 'var(--color-text-primary)'}
+                                     onMouseLeave={(e) => e.target.style.color = 'var(--color-text-tertiary)'}
                                     >
                                         {label}
                                     </a>
@@ -127,8 +139,8 @@ const Footer = () => {
                     />      
                 </a>
 
-                <p className="text-zinc-500 text-sm reveal-up">
-                    &copy; 2025 <span className="text-zinc-200">S.SHYAM SUNDAR</span>
+                <p className="text-sm reveal-up" style={{ color: 'var(--color-text-tertiary)' }}>
+                    &copy; 2025 <span style={{ color: 'var(--color-text-primary)' }}>S.SHYAM SUNDAR</span>
                 </p>
             </div>
 
