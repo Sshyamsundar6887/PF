@@ -3,7 +3,7 @@
 * @license Apache-2.0
 */
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(true);
