@@ -26,10 +26,9 @@ const works = [
       tags: ['Development', 'API', 'Python', 'jupyter notebook'],
     },
     {
-      imgSrc: './project-4.jpg',
-      title: 'Work in progress',
-      tags: [],
-      projectLink: ''
+      imgSrc: './clausewise.jpg',
+      title: 'CLAUSEWISE',
+      tags: ['Development', 'API', 'Python', 'gradio'],
     },
     /**{
       imgSrc: './project-5.jpg',
