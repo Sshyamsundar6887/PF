@@ -4,7 +4,7 @@
 */
 
 
-/**
+/**MM
  * Node modules
  */
 import PropTypes from 'prop-types';
