@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <div className={"project-card " + classes}>
 
-        <figure className="img-box aspect-square rounded-lg mg-4">
+        <figure className="img-box aspect-square rounded-lg mb-4">
             <img
              src={imgSrc}
              alt={title}
@@ -73,12 +73,16 @@ const ProjectCard = ({
   )
 }
 
-ProjectCard.PropTypes ={
+ProjectCard.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tags: PropTypes.array.isRequired,
-    projectsLink: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    projectLink: PropTypes.string.isRequired,
     classes: PropTypes.string
+}
+
+ProjectCard.defaultProps = {
+    classes: ''
 }
 
 export default ProjectCard
