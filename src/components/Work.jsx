@@ -26,17 +26,17 @@ const works = [
       tags: ['Development', 'API', 'Python', 'jupyter notebook'],
     },
     {
-      imgSrc: './clausewise.jpg',
+      imgSrc: './clausewise.png',
       title: 'CLAUSEWISE',
       tags: ['Development', 'API', 'Python', 'gradio'],
     },
-    /**{
-      imgSrc: './project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
+    {
+      imgSrc: './project-6.jpg',
+      title: 'IDEAHUB',
+      tags: [''],
       projectLink: ''
     },
-    {
+    /**{
       imgSrc: './project-6.jpg',
       title: 'vCard Personal portfolio',
       tags: ['Web-design', 'Development'],
