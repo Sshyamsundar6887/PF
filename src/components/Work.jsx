@@ -33,7 +33,7 @@ const works = [
     {
       imgSrc: './project-6.jpg',
       title: 'IDEAHUB',
-      tags: ['WORK IN PROGRESS'],
+      tags: [''],
       projectLink: ''
     },
     /**{
