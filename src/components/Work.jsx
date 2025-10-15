@@ -40,7 +40,7 @@ const works = [
       imgSrc: './project-6.jpg',
       title: 'vCard Personal portfolio',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://sshyamsundar6887.github.io/PF/#'
+      projectLink: 'https://sshyamsundar6887.github.io/PF/'
     },*/
   ];
 
