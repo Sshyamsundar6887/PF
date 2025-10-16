@@ -83,15 +83,6 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
 }
 
-/* System preference detection */
-@media (prefers-color-scheme: light) {
-  :root:not(.dark):not(.light) {
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f8fafc;
-    --color-text-primary: #0f172a;
-    --color-text-secondary: #475569;
-  }
-}
 
 /*------------------------------------*\
     *BASE STYLES
@@ -405,82 +396,6 @@ body {
   }
 }
 
-/*------------------------------------*\
-    *THEME TOGGLE
-\*------------------------------------*/
-
-.theme-toggle {
-  position: relative;
-  width: 3rem;
-  height: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.theme-toggle-track {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-bg-tertiary);
-  border: 1px solid var(--color-border);
-  border-radius: 0.75rem;
-  position: relative;
-  transition: all var(--transition-normal);
-}
-
-.theme-toggle:hover .theme-toggle-track {
-  background-color: var(--color-bg-accent);
-  border-color: var(--color-border-hover);
-}
-
-.theme-toggle-thumb {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 1.25rem;
-  height: 1.25rem;
-  background-color: var(--color-accent);
-  border-radius: 50%;
-  transition: all var(--transition-normal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-sm);
-}
-
-:root.dark .theme-toggle-thumb {
-  transform: translateX(1.375rem);
-}
-
-.theme-icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-inverse);
-  transition: all var(--transition-fast);
-}
-
-.sun-icon {
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
-
-.moon-icon {
-  opacity: 0;
-  transform: scale(0.5) rotate(180deg);
-}
-
-:root.dark .sun-icon {
-  opacity: 0;
-  transform: scale(0.5) rotate(180deg);
-}
-
-:root.dark .moon-icon {
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
-}
 
 /*------------------------------------*\
     *BUTTONS
@@ -678,15 +593,10 @@ body {
     min-height: 44px;
     min-width: 44px;
   }
-  
+
   .menu-btn {
     width: 44px;
     height: 44px;
-  }
-  
-  .theme-toggle {
-    width: 52px;
-    height: 28px;
   }
 }
 
@@ -719,7 +629,6 @@ body {
 /* Print styles */
 @media print {
   .header,
-  .theme-toggle,
   .menu-btn {
     display: none;
   }
