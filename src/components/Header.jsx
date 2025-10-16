@@ -27,7 +27,7 @@ const Header = () => {
                         className="logo"
                     >
                         <img
-                            src="./logo.ico"
+                            src={`${import.meta.env.BASE_URL}logo.ico`}
                             width={40}
                             height={40}
                             className="rounded-full"

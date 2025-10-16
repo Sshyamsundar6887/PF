@@ -12,17 +12,17 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
     {
-      imgSrc: './python.ico',
+      imgSrc: `${import.meta.env.BASE_URL}python.ico`,
       label: 'Python',
       desc: 'Programming Language'
     },
     {
-      imgSrc: './java.ico',
+      imgSrc: `${import.meta.env.BASE_URL}java.ico`,
       label: 'Java',
       desc: 'Programming Language'
     },
     {
-      imgSrc: './javascript.ico',
+      imgSrc: `${import.meta.env.BASE_URL}javascript.ico`,
       label: 'JavaScript',
       desc: 'Interaction'
     },
@@ -32,27 +32,27 @@ const skillItem = [
       desc: 'Web Server'
     },*/
     {
-      imgSrc: './django.ico',
+      imgSrc: `${import.meta.env.BASE_URL}django.ico`,
       label: 'Django',
       desc: 'Web Framework'
     },
     {
-      imgSrc: './mongodb.ico',
+      imgSrc: `${import.meta.env.BASE_URL}mongodb.ico`,
       label: 'MongoDB',
       desc: 'Database'
     },
     {
-      imgSrc: './react.ico',
+      imgSrc: `${import.meta.env.BASE_URL}react.ico`,
       label: 'React',
       desc: 'Framework'
     },
     {
-      imgSrc: './tailwindcss.ico',
+      imgSrc: `${import.meta.env.BASE_URL}tailwindcss.ico`,
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
     {
-      imgSrc: './R.png',
+      imgSrc: `${import.meta.env.BASE_URL}R.png`,
       label: 'R',
       desc: 'Data Analysis'
     },

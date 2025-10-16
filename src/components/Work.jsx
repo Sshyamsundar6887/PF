@@ -11,27 +11,27 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: './lms1.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}lms1.jpg`,
       title: 'Library Management System',
       tags: ['python','HTML5','CSS3','JavaScript','sqlite3'],
     },
     {
-      imgSrc: './hotel.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}hotel.jpg`,
       title: 'Hotel Management System Application',
       tags: ['Java','NetBeans','MySQL'],
     },
     {
-      imgSrc: './AUD-IMG.png',
+      imgSrc: `${import.meta.env.BASE_URL}AUD-IMG.png`,
       title: 'Audio-To-Image',
       tags: ['Development', 'API', 'Python', 'jupyter notebook'],
     },
     {
-      imgSrc: './clausewise.png',
+      imgSrc: `${import.meta.env.BASE_URL}clausewise.png`,
       title: 'CLAUSEWISE',
       tags: ['Development', 'API', 'Python', 'gradio'],
     },
     {
-      imgSrc: './project-6.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}project-6.jpg`,
       title: 'IDEAHUB',
       tags: [''],
       projectLink: ''

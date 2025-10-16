@@ -40,7 +40,7 @@ const About = () => {
                         ))
                     }
                     <img
-                        src="./logo.ico"
+                        src={`${import.meta.env.BASE_URL}logo.ico`}
                         alt="logo"
                         width={30}
                         height={30}

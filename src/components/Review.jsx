@@ -27,37 +27,37 @@ const reviews = [
     {
       content: 'Enthusiastic and dedicated to his work. He is a quick learner and always ready to take on new challenges.',
       name: 'Sophia Ramirez',
-      imgSrc: './people-1.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-1.jpg`,
       company: 'PixelForge'
     },
     {
       content: 'Actively participated in group discussions and always ready to share his ideas.',
       name: 'Ethan Caldwell',
-      imgSrc: './people-2.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-2.jpg`,
       company: 'NexaWave'
     },
     {
       content: 'He is a great team player and always ready to help his friends.',
       name: 'Liam Bennett',
-      imgSrc: './people-3.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-3.jpg`,
       company: 'CodeCraft'
     },
     {
       content: 'Ready to learn about new concepts and technologies.',
       name: 'Noah Williams',
-      imgSrc: './people-4.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-4.jpg`,
       company: 'BrightWeb'
     },
     {
       content: 'Contributed to the project with his full dedication and commitment.',
       name: 'Ava Thompson',
-      imgSrc: './people-5.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-5.jpg`,
       company: 'TechMosaic'
     },
     {
       content: 'Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.',
       name: 'Jonathan',
-      imgSrc: './people-6.jpg',
+      imgSrc: `${import.meta.env.BASE_URL}people-6.jpg`,
       company: 'Skyline Digital'
     }
   ];

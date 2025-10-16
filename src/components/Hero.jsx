@@ -23,7 +23,7 @@ const Hero = () => {
                 <div className="flex items-center gap-3"> 
                     <figure className="img-box w-9 h-9 rounded-lg">
                         <img
-                         src="./Law.jpg"
+                         src={`${import.meta.env.BASE_URL}Law.jpg`}
                          width={40}
                          height={40}
                          alt="Shyam portrait"
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="hero-image">
                 <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-gray-400 via-25% via-black-500/40 to-65% rounded-[60px] overflow-hidden">
                     <img
-                     src="./hero-banner.png"
+                     src={`${import.meta.env.BASE_URL}hero-banner.png`}
                      width={656}
                      height={800}
                      alt="SHYAM"
