@@ -33,7 +33,7 @@ const works = [
     {
       imgSrc: `${import.meta.env.BASE_URL}project-6.jpg`,
       title: 'IDEAHUB',
-      tags: [''],
+      tags: ['WORK IN PROGRESS'],
       projectLink: ''
     },
     /**{
