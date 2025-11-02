@@ -18,6 +18,11 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /**
+* Contexts
+*/
+import { ThemeProvider } from "./contexts/ThemeContext";
+
+/**
 * Components
 */
 import Header from "./components/Header";
@@ -51,18 +56,20 @@ const APP = () => {
   });
 
   return (
-    <ReactLenis root>
-        <Header />
-        <main>
-            <Hero />
-            <About />
-            <Skill />
-            <Work />
-            <Review />
-            <Contact />
-        </main>
-        <Footer  />
-    </ReactLenis>
+    <ThemeProvider>
+      <ReactLenis root>
+          <Header />
+          <main>
+              <Hero />
+              <About />
+              <Skill />
+              <Work />
+              <Review />
+              <Contact />
+          </main>
+          <Footer  />
+      </ReactLenis>
+    </ThemeProvider>
   )
 } 
 

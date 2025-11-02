@@ -12,6 +12,7 @@ import React, { useState } from 'react';
  * Components
  */
 import Navbar from "./Navbar"
+import ThemeToggle from "./ThemeToggle"
 
 
 const Header = () => {
@@ -51,6 +52,7 @@ const Header = () => {
                 </div>
 
                 <div className="header-actions">
+                    <ThemeToggle />
                     <a
                         href="#contact"
                         className="btn btn-secondary max-md:hidden"
