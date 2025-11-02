@@ -17,20 +17,21 @@ const ProjectCard = ({
     classes
 }) => {
   return (
-    <div className={"project-card " + classes}>
+    <div className={"project-card group " + classes}>
 
-        <figure className="img-box aspect-square rounded-lg mg-4">
+        <figure className="img-box aspect-square rounded-lg mg-4 project-image-wrapper">
             <img
              src={imgSrc}
              alt={title}
              loading='lazy'
-             className="img-cover"
+             className="img-cover project-image"
             />
+            <div className="project-overlay"></div>
         </figure>
 
         <div className="flex items-center justify-between gap-4">
             <div>
-                <h3 className="title-1 mb-3">
+                <h3 className="title-1 mb-3 project-title">
                     {title}
                 </h3>
 
@@ -38,7 +39,7 @@ const ProjectCard = ({
                     {tags.map((label) => (
                         <span
                          key={label}
-                         className="h-8 text-sm grid items-center px-3 rounded-lg"
+                         className="h-8 text-sm grid items-center px-3 rounded-lg project-tag"
                          style={{ 
                            color: 'var(--color-text-tertiary)', 
                            backgroundColor: 'var(--color-bg-accent)' 
@@ -50,13 +51,13 @@ const ProjectCard = ({
                 </div>
             </div>
 
-            <div className="w-11 h-11 rounded-lg grid place-items-center shrink-0" 
+            <div className="w-11 h-11 rounded-lg grid place-items-center shrink-0 project-arrow" 
                  style={{ 
                    backgroundColor: 'var(--color-accent)', 
                    color: 'var(--color-text-inverse)' 
                  }}>
                 <span
-                 className="material-symbols-rounded"
+                 className="material-symbols-rounded arrow-icon"
                  aria-hidden="true"
                 >
                     arrow_outward
@@ -68,6 +69,7 @@ const ProjectCard = ({
          href={projectLink}
          target='_blank'
          className="absolute inset-0"
+         aria-label={`View ${title} project`}
         ></a>
     </div>
   )

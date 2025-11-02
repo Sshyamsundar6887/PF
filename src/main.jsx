@@ -23,6 +23,9 @@ import App from './App.jsx';
 import './index.css'
 import 'lenis/dist/lenis.css'
 
+// Add class to indicate JavaScript is enabled (for progressive enhancement)
+document.documentElement.classList.add('js-enabled');
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

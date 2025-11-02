@@ -6,7 +6,7 @@
 /**
  * Node modules
  */
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 /**
  * Components
@@ -17,9 +17,33 @@ import ThemeToggle from "./ThemeToggle"
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false);
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        const header = headerRef.current;
+        if (!header) return;
+
+        const handleScroll = () => {
+            const currentScroll = window.pageYOffset;
+            
+            // Only update scrolled class for styling, keep header always visible
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll(); // Initial call
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <header className="header">
+        <header className="header" ref={headerRef}>
             <div className="container">
                 <div className="header-content">            
                 <h1>

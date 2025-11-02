@@ -51,10 +51,15 @@ const Navbar = ({ navOpen }) => {
 
     const updateActiveBoxPosition = useCallback((element) => {
         if (element && activeBox.current) {
-            activeBox.current.style.top = `${element.offsetTop}px`;
-            activeBox.current.style.left = `${element.offsetLeft}px`;
-            activeBox.current.style.width = `${element.offsetWidth}px`;
-            activeBox.current.style.height = `${element.offsetHeight}px`;
+            // Use requestAnimationFrame for smoother animations
+            requestAnimationFrame(() => {
+                if (activeBox.current && element) {
+                    activeBox.current.style.top = `${element.offsetTop}px`;
+                    activeBox.current.style.left = `${element.offsetLeft}px`;
+                    activeBox.current.style.width = `${element.offsetWidth}px`;
+                    activeBox.current.style.height = `${element.offsetHeight}px`;
+                }
+            });
         }
     }, []);
 
@@ -127,10 +132,10 @@ const Navbar = ({ navOpen }) => {
                 <a
                     href={link}
                     key={id}
-                    className={className}
+                    className={`${className} nav-link-animated`}
                     onClick={(event) => handleNavClick(event, link)}
                 >
-                    {label}
+                    <span className="nav-link-text">{label}</span>
                 </a>
             ))}
             <div className="active-box" ref={activeBox}></div>
