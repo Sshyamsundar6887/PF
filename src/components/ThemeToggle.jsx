@@ -12,7 +12,6 @@ import { useTheme } from '../contexts/ThemeContext';
 const ThemeToggle = () => {
   const { isDark, toggleTheme } = useTheme();
   const buttonRef = useRef(null);
-  const iconRef = useRef(null);
 
   useEffect(() => {
     // Add animation class when theme changes
@@ -33,10 +32,7 @@ const ThemeToggle = () => {
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      <span 
-        ref={iconRef}
-        className="theme-toggle-icon"
-      >
+      <span className="theme-toggle-icon">
         <span className="material-symbols-rounded">
           {isDark ? 'dark_mode' : 'light_mode'}
         </span>

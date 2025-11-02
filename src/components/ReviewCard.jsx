@@ -7,11 +7,11 @@
 import PropTypes from "prop-types"
 
 
-const ratings = new Array(5);
-ratings.fill({
+// Create ratings array with proper immutability
+const RATINGS = Array.from({ length: 5 }, () => ({
     icon: 'star',
     style: { fontVariationSettings: '"FILL"1'}
-});
+}));
 
 
 const ReviewCard = ({
@@ -24,9 +24,9 @@ const ReviewCard = ({
     <div className="p-5 rounded-xl min-w-[320px] flex-col lg:min-w-[420px]" 
          style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
         <div className="flex items-center gap-1 mb-3">
-            {ratings.map(({ icon, style }, key)=>(
+            {RATINGS.map(({ icon, style }, index) => (
                 <span
-                 key={key}
+                 key={index}
                  className="material-symbols-rounded text-[18px]"
                  style={style}
                 >

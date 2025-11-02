@@ -53,7 +53,7 @@ const APP = () => {
         ease: 'power2.Out',
       })
     });
-  });
+  }, []); // Add empty dependency array to run only once
 
   return (
     <ThemeProvider>

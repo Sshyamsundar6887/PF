@@ -4,7 +4,7 @@
 */
 
 
-/**MM
+/**
  * Node modules
  */
 import PropTypes from 'prop-types';
@@ -35,9 +35,9 @@ const ProjectCard = ({
                 </h3>
 
                 <div className="flex flex-wrap items-center gap-2">
-                    {tags.map((label, key) => (
+                    {tags.map((label) => (
                         <span
-                         key={key}
+                         key={label}
                          className="h-8 text-sm grid items-center px-3 rounded-lg"
                          style={{ 
                            color: 'var(--color-text-tertiary)', 
@@ -73,11 +73,11 @@ const ProjectCard = ({
   )
 }
 
-ProjectCard.PropTypes ={
+ProjectCard.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     tags: PropTypes.array.isRequired,
-    projectsLink: PropTypes.string.isRequired,
+    projectLink: PropTypes.string,
     classes: PropTypes.string
 }
 

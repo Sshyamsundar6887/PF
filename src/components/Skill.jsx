@@ -9,19 +9,22 @@
  */
 import SkillCard from "./SkillCard";
 
-
+// Move skillItem array outside component to avoid recreation on every render
 const skillItem = [
     {
+      id: 'skill-1',
       imgSrc: `${import.meta.env.BASE_URL}python.ico`,
       label: 'Python',
       desc: 'Programming Language'
     },
     {
+      id: 'skill-2',
       imgSrc: `${import.meta.env.BASE_URL}java.ico`,
       label: 'Java',
       desc: 'Programming Language'
     },
     {
+      id: 'skill-3',
       imgSrc: `${import.meta.env.BASE_URL}javascript.ico`,
       label: 'JavaScript',
       desc: 'Interaction'
@@ -32,26 +35,31 @@ const skillItem = [
       desc: 'Web Server'
     },*/
     {
+      id: 'skill-4',
       imgSrc: `${import.meta.env.BASE_URL}django.ico`,
       label: 'Django',
       desc: 'Web Framework'
     },
     {
+      id: 'skill-5',
       imgSrc: `${import.meta.env.BASE_URL}mongodb.ico`,
       label: 'MongoDB',
       desc: 'Database'
     },
     {
+      id: 'skill-6',
       imgSrc: `${import.meta.env.BASE_URL}react.ico`,
       label: 'React',
       desc: 'Framework'
     },
     {
+      id: 'skill-7',
       imgSrc: `${import.meta.env.BASE_URL}tailwindcss.ico`,
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
     {
+      id: 'skill-8',
       imgSrc: `${import.meta.env.BASE_URL}R.png`,
       label: 'R',
       desc: 'Data Analysis'
@@ -74,9 +82,9 @@ const Skill = () => {
 
             <div className="skills-grid">
                 {
-                     skillItem.map(({ imgSrc, label, desc }, key)=>(
+                     skillItem.map(({ id, imgSrc, label, desc }) => (
                         <SkillCard
-                            key={key}
+                            key={id}
                             imgSrc={imgSrc}
                             label={label}
                             desc={desc}

@@ -9,28 +9,38 @@
  */
 import ProjectCard from "./ProjectCard";
 
+// Move works array outside component to avoid recreation on every render
 const works = [
     {
+      id: 'work-1',
       imgSrc: `${import.meta.env.BASE_URL}lms1.jpg`,
       title: 'Library Management System',
       tags: ['python','HTML5','CSS3','JavaScript','sqlite3'],
+      projectLink: ''
     },
     {
+      id: 'work-2',
       imgSrc: `${import.meta.env.BASE_URL}hotel.jpg`,
       title: 'Hotel Management System Application',
       tags: ['Java','NetBeans','MySQL'],
+      projectLink: ''
     },
     {
+      id: 'work-3',
       imgSrc: `${import.meta.env.BASE_URL}AUD-IMG.png`,
       title: 'Audio-To-Image',
       tags: ['Development', 'API', 'Python', 'jupyter notebook'],
+      projectLink: ''
     },
     {
+      id: 'work-4',
       imgSrc: `${import.meta.env.BASE_URL}clausewise.png`,
       title: 'CLAUSEWISE',
       tags: ['Development', 'API', 'Python', 'gradio'],
+      projectLink: ''
     },
     {
+      id: 'work-5',
       imgSrc: `${import.meta.env.BASE_URL}project-6.jpg`,
       title: 'IDEAHUB',
       tags: ['WORK IN PROGRESS'],
@@ -57,9 +67,9 @@ const Work = () => {
             </h2>
 
             <div className="work-grid">
-                {works.map(({ imgSrc, title, tags, projectLink }, key) =>(
+                {works.map(({ id, imgSrc, title, tags, projectLink }) => (
                     <ProjectCard
-                     key={key}
+                     key={id}
                      imgSrc={imgSrc}
                      title={title}
                      tags={tags}
