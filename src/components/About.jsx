@@ -79,7 +79,7 @@ const About = () => {
             <div className="about-card reveal-up" ref={aboutCardRef}>
                 <h2 className="headline-2 mb-4">About Me</h2>
                 <p className="text-lg mb-4 md:text-xl md:max-w-[65ch]" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
-                  I&apos;m Shyam Sundar Sriperumbuduru — an AI/ML Engineer and Python Developer based in Hyderabad. I have a natural curiosity for exploring new technologies, especially in the space of Artificial Intelligence and Machine Learning.
+                  I&apos;m Shyam Sundar Sriperumbuduru — an AI/ML Engineer and Python Developer. I have a natural curiosity for exploring new technologies, especially in the space of Artificial Intelligence and Machine Learning.
                 </p>
                 <p className="text-base mb-8 md:max-w-[65ch]" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
                   The development of AI/ML technologies fascinates me because of their potential to transform how people interact with the world. I believe in a growth mindset — remaining open-minded, always asking questions, and being willing to explore unfamiliar territory. Currently building expertise in Generative AI and Agentic AI systems.
