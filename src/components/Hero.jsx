@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 
 /**
@@ -25,7 +25,6 @@ const Hero = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Check for reduced motion preference
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       
       // Ensure all elements are visible by default
@@ -46,51 +45,46 @@ const Hero = () => {
         gsap.set(heroImageRef.current, { opacity: 1, scale: 1 });
       }
 
-      // Only animate if not reduced motion
       if (!prefersReducedMotion) {
-        // Hero title animation - split text effect
         if (titleRef.current) {
           gsap.from(titleRef.current, {
-            y: 50,
-            opacity: 0.3,
-            duration: 0.8,
-            ease: 'power2.out',
-            delay: 0.1
+            y: 60,
+            opacity: 0,
+            duration: 1,
+            ease: 'power3.out',
+            delay: 0.15
           });
         }
 
-        // Status badge animation
         if (statusRef.current && statusRef.current.children) {
           gsap.from(statusRef.current.children, {
             scale: 0.8,
-            opacity: 0.5,
-            duration: 0.4,
+            opacity: 0,
+            duration: 0.6,
             ease: 'back.out(1.4)',
-            stagger: 0.08,
+            stagger: 0.1,
             delay: 0.05
           });
         }
 
-        // Buttons animation
         if (buttonsRef.current && buttonsRef.current.children) {
           gsap.from(buttonsRef.current.children, {
-            y: 20,
-            opacity: 0.5,
-            duration: 0.6,
-            ease: 'power2.out',
-            stagger: 0.1,
-            delay: 0.3
+            y: 24,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out',
+            stagger: 0.12,
+            delay: 0.4
           });
         }
 
-        // Hero image animation
         if (heroImageRef.current) {
           gsap.from(heroImageRef.current, {
-            scale: 1.05,
-            opacity: 0.5,
-            duration: 1,
-            ease: 'power2.out',
-            delay: 0.2
+            scale: 1.08,
+            opacity: 0,
+            duration: 1.2,
+            ease: 'power3.out',
+            delay: 0.3
           });
         }
       }
@@ -105,6 +99,9 @@ const Hero = () => {
      className="section hero-section"
      ref={heroRef}
     >
+        {/* Decorative background orb */}
+        <div className="hero-bg-orb" aria-hidden="true"></div>
+
         <div className="container">
             <div className="hero-content">
 
@@ -115,12 +112,12 @@ const Hero = () => {
                          src={`${import.meta.env.BASE_URL}Law.jpg`}
                          width={40}
                          height={40}
-                         alt="Shyam portrait"
+                         alt="Shyam Sundar portrait"
                          className="img-cover"
                         />
                     </figure>
 
-                    <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
+                    <div className="flex items-center gap-1.5 text-sm tracking-wide" style={{ color: 'var(--color-text-tertiary)' }}>
                         <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                             <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
                         </span>
@@ -128,8 +125,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <h2 className="headline-1 hero-title" ref={titleRef}>
-                 Eager to learn new things and build projects to develop both myself and my community
+                 AI/ML Engineer solving real-world problems with intelligent systems
                 </h2>
+
+                <p className="text-base mb-6 max-w-[55ch]" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
+                  Python developer &amp; Generative AI practitioner with hands-on experience building AI-powered applications — from agentic workflows to production-ready ML pipelines.
+                </p>
 
                 <div className="flex items-center gap-3" ref={buttonsRef}>
                     <ButtonPrimary
@@ -152,7 +153,7 @@ const Hero = () => {
                      src={`${import.meta.env.BASE_URL}hero-banner.png`}
                      width={656}
                      height={800}
-                     alt="SHYAM"
+                     alt="Shyam Sundar"
                      className="w-full hero-main-image"
                      ref={heroImageRef}
                     />

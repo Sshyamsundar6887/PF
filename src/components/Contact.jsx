@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 
 const socialLinks = [
@@ -13,14 +13,14 @@ const socialLinks = [
       alt: 'GitHub'
     },
     {
-      href: 'https://www.linkedin.com/in/shyam-sundar-s-166b2619b/',
+      href: 'https://www.linkedin.com/in/shyam-sundar-s-sdn',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M5.75 3C4.24011 3 3 4.24011 3 5.75V18.25C3 19.7599 4.24011 21 5.75 21H18.25C19.7599 21 21 19.7599 21 18.25V5.75C21 4.24011 19.7599 3 18.25 3H5.75ZM5.75 4.5H18.25C18.9491 4.5 19.5 5.05089 19.5 5.75V18.25C19.5 18.9491 18.9491 19.5 18.25 19.5H5.75C5.05089 19.5 4.5 18.9491 4.5 18.25V5.75C4.5 5.05089 5.05089 4.5 5.75 4.5ZM7.75 6.5C7.41848 6.5 7.10054 6.6317 6.86612 6.86612C6.6317 7.10054 6.5 7.41848 6.5 7.75C6.5 8.08152 6.6317 8.39946 6.86612 8.63388C7.10054 8.8683 7.41848 9 7.75 9C8.08152 9 8.39946 8.8683 8.63388 8.63388C8.8683 8.39946 9 8.08152 9 7.75C9 7.41848 8.8683 7.10054 8.63388 6.86612C8.39946 6.6317 8.08152 6.5 7.75 6.5ZM7 10C6.7235 10 6.5 10.2235 6.5 10.5V17C6.5 17.2765 6.7235 17.5 7 17.5H8.5C8.7765 17.5 9 17.2765 9 17V10.5C9 10.2235 8.7765 10 8.5 10H7ZM10.5 10C10.2235 10 10 10.2235 10 10.5V17C10 17.2765 10.2235 17.5 10.5 17.5H12C12.2765 17.5 12.5 17.2765 12.5 17V13.25C12.5 12.5605 13.0605 12 13.75 12C14.4395 12 15 12.5605 15 13.25V17C15 17.2765 15.2235 17.5 15.5 17.5H17C17.2765 17.5 17.5 17.2765 17.5 17V13C17.5 11.3455 16.1545 10 14.5 10C13.731 10 13.0315 10.293 12.5 10.7705V10.5C12.5 10.2235 12.2765 10 12 10H10.5Z" fill="currentColor" />
       </svg>,
       alt: 'LinkedIn'
     },
     {
-      href: 'https://x.com/law6887',
+      href: 'https://x.com/Ace_6887',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.25 3C4.46403 3 3 4.46403 3 6.25V17.75C3 19.536 4.46403 21 6.25 21H17.75C19.536 21 21 19.536 21 17.75V6.25C21 4.46403 19.536 3 17.75 3H6.25ZM6.25 4.5H17.75C18.725 4.5 19.5 5.27497 19.5 6.25V17.75C19.5 18.725 18.725 19.5 17.75 19.5H6.25C5.27497 19.5 4.5 18.725 4.5 17.75V6.25C4.5 5.27497 5.27497 4.5 6.25 4.5ZM6.91406 7L10.7822 12.5283L6.91113 17H7.93262L11.2344 13.1758L13.9102 17H17.1289L13.0127 11.1172L16.5684 7H15.5684L12.5615 10.4717L10.1328 7H6.91406ZM8.46777 7.84766H9.74902L15.5752 16.1523H14.2939L8.46777 7.84766Z" fill="currentColor" />
       </svg>,
@@ -46,11 +46,28 @@ const Contact = () => {
             <div className="contact-grid">
             <div className="flex flex-col">
             <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
-                Contact me for collaboration
+                Let&apos;s work together
             </h2>
-            <p className="mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up" style={{ color: 'var(--color-text-secondary)' }}>
-                Reach out today to discuss your project needs and start collaborating on something amazing!
+            <p className="mt-3 mb-4 max-w-[50ch] lg:max-w-[30ch] reveal-up" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
+                Have an idea or project in mind? I&apos;d love to hear about it. Let&apos;s connect and create something great.
             </p>
+
+            {/* Contact details */}
+            <div className="flex flex-col gap-2 mb-6 reveal-up">
+                <a href="tel:+918247226448" className="flex items-center gap-2 text-sm transition-colors footer-link" style={{ color: 'var(--color-text-secondary)' }}>
+                    <span className="material-symbols-rounded text-base" style={{ color: 'var(--color-accent)' }}>phone</span>
+                    +91 8247226448
+                </a>
+                <a href="mailto:shyamsriperumbuduru@gmail.com" className="flex items-center gap-2 text-sm transition-colors footer-link" style={{ color: 'var(--color-text-secondary)' }}>
+                    <span className="material-symbols-rounded text-base" style={{ color: 'var(--color-accent)' }}>mail</span>
+                    shyamsriperumbuduru@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/shyam-sundar-s-sdn" target="_blank" className="flex items-center gap-2 text-sm transition-colors footer-link" style={{ color: 'var(--color-text-secondary)' }}>
+                    <span className="material-symbols-rounded text-base" style={{ color: 'var(--color-accent)' }}>link</span>
+                    linkedin.com/in/shyam-sundar-s-sdn
+                </a>
+            </div>
+
             <div className="social-links"> 
                 {socialLinks.map(({ href, icon },key)=>(
                     <a
@@ -76,7 +93,7 @@ const Contact = () => {
                          htmlFor="name"
                          className="label reveal-up"
                         >
-                            Your Name
+                            Name
                         </label>
                         <input
                          type="text"
@@ -84,7 +101,7 @@ const Contact = () => {
                          id="name"
                          autoComplete="name"
                          required
-                         placeholder="SHYAM"
+                         placeholder="Your name"
                          className="text-field reveal-up"
                         />
                     </div>
@@ -94,7 +111,7 @@ const Contact = () => {
                          htmlFor="email"
                          className="label reveal-up"
                         >
-                           Your Email
+                           Email
                         </label>
                         <input
                          type="email"
@@ -102,7 +119,7 @@ const Contact = () => {
                          id="email"
                          autoComplete="email"
                          required
-                         placeholder="SHYAM@example.com"
+                         placeholder="you@example.com"
                          className="text-field reveal-up"
                         />
                     </div>
@@ -118,7 +135,7 @@ const Contact = () => {
                     <textarea
                      name="message"
                      id="message"
-                     placeholder="HI!"
+                     placeholder="Tell me about your project..."
                      required
                      className="text-field resize-y min-h-32 max-h-80 reveal-up"
                     ></textarea>

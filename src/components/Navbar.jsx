@@ -24,15 +24,15 @@ const navItems = [
       className: 'nav-link'
     },
     {
-      id: 'work',
-      label: 'Work',
-      link: '#work',
+      id: 'experience',
+      label: 'Experience',
+      link: '#experience',
       className: 'nav-link'
     },
     {
-      id: 'reviews',
-      label: 'Reviews',
-      link: '#reviews',
+      id: 'work',
+      label: 'Projects',
+      link: '#work',
       className: 'nav-link'
     },
     {

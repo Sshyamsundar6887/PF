@@ -1,12 +1,12 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 /**
  * Node modules
  */
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 /**
  * Components
@@ -26,7 +26,6 @@ const Header = () => {
         const handleScroll = () => {
             const currentScroll = window.pageYOffset;
             
-            // Only update scrolled class for styling, keep header always visible
             if (currentScroll > 50) {
                 header.classList.add('scrolled');
             } else {
@@ -35,7 +34,7 @@ const Header = () => {
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
-        handleScroll(); // Initial call
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -53,10 +52,10 @@ const Header = () => {
                     >
                         <img
                             src={`${import.meta.env.BASE_URL}logo.ico`}
-                            width={40}
-                            height={40}
+                            width={36}
+                            height={36}
                             className="rounded-full"
-                            alt="SHYAM Logo"
+                            alt="Shyam Sundar Logo"
                         />
                     </a>
                 </h1>
@@ -79,9 +78,9 @@ const Header = () => {
                     <ThemeToggle />
                     <a
                         href="#contact"
-                        className="btn btn-secondary max-md:hidden"
+                        className="btn btn-primary max-md:hidden"
                     >
-                        Contact Me
+                        Let&apos;s Talk
                     </a>
                 </div>
                 </div>

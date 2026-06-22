@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 
 /**
@@ -15,31 +15,21 @@ const skillItem = [
       id: 'skill-1',
       imgSrc: `${import.meta.env.BASE_URL}python.ico`,
       label: 'Python',
-      desc: 'Programming Language'
+      desc: 'AI/ML & Backend'
     },
     {
       id: 'skill-2',
-      imgSrc: `${import.meta.env.BASE_URL}java.ico`,
-      label: 'Java',
-      desc: 'Programming Language'
+      imgSrc: `${import.meta.env.BASE_URL}tensorflow.svg`,
+      label: 'TensorFlow',
+      desc: 'Deep Learning'
     },
     {
       id: 'skill-3',
       imgSrc: `${import.meta.env.BASE_URL}javascript.ico`,
       label: 'JavaScript',
-      desc: 'Interaction'
+      desc: 'Web Development'
     },
-    /**{
-      imgSrc: './nodejs.ico',
-      label: 'NodeJS',
-      desc: 'Web Server'
-    },*/
-    {
-      id: 'skill-4',
-      imgSrc: `${import.meta.env.BASE_URL}django.ico`,
-      label: 'Django',
-      desc: 'Web Framework'
-    },
+
     {
       id: 'skill-5',
       imgSrc: `${import.meta.env.BASE_URL}mongodb.ico`,
@@ -48,15 +38,15 @@ const skillItem = [
     },
     {
       id: 'skill-6',
-      imgSrc: `${import.meta.env.BASE_URL}react.ico`,
-      label: 'React',
-      desc: 'Framework'
+      imgSrc: `${import.meta.env.BASE_URL}pytorch.svg`,
+      label: 'PyTorch',
+      desc: 'Deep Learning'
     },
     {
       id: 'skill-7',
-      imgSrc: `${import.meta.env.BASE_URL}tailwindcss.ico`,
-      label: 'TailwindCSS',
-      desc: 'User Interface'
+      imgSrc: `${import.meta.env.BASE_URL}pandas.svg`,
+      label: 'Pandas',
+      desc: 'Data Analysis'
     },
     {
       id: 'skill-8',
@@ -64,7 +54,45 @@ const skillItem = [
       label: 'R',
       desc: 'Data Analysis'
     },
+    {
+      id: 'skill-9',
+      imgSrc: `${import.meta.env.BASE_URL}aws.svg`,
+      label: 'AWS',
+      desc: 'Cloud Platform'
+    },
+    {
+      id: 'skill-10',
+      imgSrc: `${import.meta.env.BASE_URL}docker.svg`,
+      label: 'Docker',
+      desc: 'Containerization'
+    },
+    {
+      id: 'skill-11',
+      imgSrc: `${import.meta.env.BASE_URL}jupyter.svg`,
+      label: 'Jupyter',
+      desc: 'Interactive Computing'
+    },
+    {
+      id: 'skill-12',
+      imgSrc: `${import.meta.env.BASE_URL}opencv.svg`,
+      label: 'OpenCV',
+      desc: 'Computer Vision'
+    },
+    {
+      id: 'skill-13',
+      imgSrc: `${import.meta.env.BASE_URL}keras.svg`,
+      label: 'Keras',
+      desc: 'Neural Networks'
+    },
+    {
+      id: 'skill-14',
+      imgSrc: `${import.meta.env.BASE_URL}numpy.svg`,
+      label: 'NumPy',
+      desc: 'Scientific Computing'
+    },
   ];
+
+const additionalSkills = ['Git', 'Computer Vision', 'NLP', 'Generative AI', 'Agentic AI', 'MLOps', 'Amazon SageMaker', 'AWS Lambda', 'Amazon EC2', 'Amazon S3'];
 
 
 const Skill = () => {
@@ -73,11 +101,11 @@ const Skill = () => {
         <div className="container">
 
             <h2 className="headline-2 reveal-up">
-                Essential Tools I Use
+                Tech Stack
             </h2>
 
-            <p className="mt-3 mb-8 max-w-[50ch] reveal-up" style={{ color: 'var(--color-text-secondary)' }}>
-            Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
+            <p className="mt-3 mb-10 max-w-[50ch] reveal-up" style={{ color: 'var(--color-text-secondary)' }}>
+            The tools and technologies I use to bring ideas to life — from AI/ML frameworks to full-stack development.
             </p>
 
             <div className="skills-grid">
@@ -92,6 +120,23 @@ const Skill = () => {
                         />
                      ))
                 }
+            </div>
+
+            {/* Additional Skills */}
+            <div className="flex flex-wrap gap-2 mt-8 reveal-up">
+              {additionalSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="h-8 text-sm grid items-center px-4 rounded-full font-medium"
+                  style={{
+                    color: 'var(--color-accent)',
+                    backgroundColor: 'var(--color-accent-soft)',
+                    border: '1px solid var(--color-border)'
+                  }}
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
         </div>
     </section>

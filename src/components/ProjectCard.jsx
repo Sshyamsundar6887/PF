@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 
 /**
@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <div className={"project-card group " + classes}>
 
-        <figure className="img-box aspect-square rounded-lg mg-4 project-image-wrapper">
+        <figure className="img-box aspect-[16/10] rounded-lg mb-4 project-image-wrapper">
             <img
              src={imgSrc}
              alt={title}
@@ -39,10 +39,11 @@ const ProjectCard = ({
                     {tags.map((label) => (
                         <span
                          key={label}
-                         className="h-8 text-sm grid items-center px-3 rounded-lg project-tag"
+                         className="h-7 text-xs grid items-center px-3 rounded-full project-tag"
                          style={{ 
                            color: 'var(--color-text-tertiary)', 
-                           backgroundColor: 'var(--color-bg-accent)' 
+                           backgroundColor: 'var(--color-accent-soft)',
+                           border: '1px solid var(--color-border)'
                          }}
                         >
                          {label}
@@ -51,11 +52,7 @@ const ProjectCard = ({
                 </div>
             </div>
 
-            <div className="w-11 h-11 rounded-lg grid place-items-center shrink-0 project-arrow" 
-                 style={{ 
-                   backgroundColor: 'var(--color-accent)', 
-                   color: 'var(--color-text-inverse)' 
-                 }}>
+            <div className="w-11 h-11 rounded-lg grid place-items-center shrink-0 project-arrow">
                 <span
                  className="material-symbols-rounded arrow-icon"
                  aria-hidden="true"

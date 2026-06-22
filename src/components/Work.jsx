@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 
 /**
@@ -15,43 +15,37 @@ const works = [
       id: 'work-1',
       imgSrc: `${import.meta.env.BASE_URL}lms1.jpg`,
       title: 'Library Management System',
-      tags: ['python','HTML5','CSS3','JavaScript','sqlite3'],
+      tags: ['Python','HTML5','CSS3','JavaScript','SQLite'],
       projectLink: ''
     },
     {
       id: 'work-2',
-      imgSrc: `${import.meta.env.BASE_URL}hotel.jpg`,
-      title: 'Hotel Management System Application',
-      tags: ['Java','NetBeans','MySQL'],
+      imgSrc: `${import.meta.env.BASE_URL}project-4.jpg`,
+      title: 'Predictive Analytics Model',
+      tags: ['Python','Scikit-Learn','Pandas'],
       projectLink: ''
     },
     {
       id: 'work-3',
       imgSrc: `${import.meta.env.BASE_URL}AUD-IMG.png`,
       title: 'Audio-To-Image',
-      tags: ['Development', 'API', 'Python', 'jupyter notebook'],
+      tags: ['Python', 'API', 'Jupyter'],
       projectLink: ''
     },
     {
       id: 'work-4',
       imgSrc: `${import.meta.env.BASE_URL}clausewise.png`,
       title: 'CLAUSEWISE',
-      tags: ['Development', 'API', 'Python', 'gradio'],
+      tags: ['Python', 'API', 'Gradio'],
       projectLink: ''
     },
     {
       id: 'work-5',
       imgSrc: `${import.meta.env.BASE_URL}project-6.jpg`,
       title: 'IDEAHUB',
-      tags: ['WORK IN PROGRESS'],
+      tags: ['In Progress'],
       projectLink: ''
     },
-    /**{
-      imgSrc: './project-6.jpg',
-      title: 'vCard Personal portfolio',
-      tags: ['Web-design', 'Development'],
-      projectLink: 'https://sshyamsundar6887.github.io/PF/'
-    },*/
   ];
 
 
@@ -62,9 +56,13 @@ const Work = () => {
         className="section"
     >
         <div className="container">
-            <h2 className="headline-2 mb-8 reveal-up">
-                My Portfolio highlights
+            <h2 className="headline-2 mb-4 reveal-up">
+                Featured Projects
             </h2>
+
+            <p className="mb-10 max-w-[50ch] reveal-up" style={{ color: 'var(--color-text-secondary)' }}>
+              A selection of projects I&apos;ve built — from full-stack web apps to AI-powered tools.
+            </p>
 
             <div className="work-grid">
                 {works.map(({ id, imgSrc, title, tags, projectLink }) => (

@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Environments
+.venv
+venv
+ENV
+env
+

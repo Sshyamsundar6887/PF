@@ -1,7 +1,7 @@
 /**
-* @copyright 2025 SHYAM
-* @license Apache-2.0
-*/
+ * @copyright 2025 SHYAM
+ * @license Apache-2.0
+ */
 
 /**
  * Node modules
@@ -12,12 +12,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const aboutItems = [
     {
-      label: 'Project done',
+      label: 'Projects completed',
       number: 5
     },
     {
-      label: 'Years of experience',
-      number: 1
+      label: 'Months of experience',
+      number: 10
     }
   ];
 
@@ -30,7 +30,6 @@ const animateNumber = (element, targetNumber, duration = 2000) => {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
     
-    // Easing function (easeOutCubic)
     const easeProgress = 1 - Math.pow(1 - progress, 3);
     const currentNumber = Math.floor(startNumber + (targetNumber - startNumber) * easeProgress);
     
@@ -52,7 +51,6 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate numbers when section comes into view
       numbersRef.current.forEach((numElement, index) => {
         if (numElement) {
           const targetNumber = parseInt(aboutItems[index]?.number || 0);
@@ -79,23 +77,34 @@ const About = () => {
     >
         <div className="container">
             <div className="about-card reveal-up" ref={aboutCardRef}>
-                <p className="text-lg mb-6 md:mb-8 md:text-xl md:max-w-[60ch]" style={{ color: 'var(--color-text-secondary)' }}>
-                Welcome! I&apos;m S.Shyam Sundar, a fresher with lots of enthusiasm for learning new technologies and building new projects. Combining creativity and technical expertise. Eager to learn lots of new things.
+                <h2 className="headline-2 mb-4">About Me</h2>
+                <p className="text-lg mb-4 md:text-xl md:max-w-[65ch]" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
+                  I&apos;m Shyam Sundar Sriperumbuduru — an AI/ML Engineer and Python Developer based in Hyderabad. I have a natural curiosity for exploring new technologies, especially in the space of Artificial Intelligence and Machine Learning.
                 </p>
-                <div className="flex flex-wrap items-center gap-4 md:gap-7">
-                    {aboutItems.map(({label, number }, key) => (
+                <p className="text-base mb-8 md:max-w-[65ch]" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
+                  The development of AI/ML technologies fascinates me because of their potential to transform how people interact with the world. I believe in a growth mindset — remaining open-minded, always asking questions, and being willing to explore unfamiliar territory. Currently building expertise in Generative AI and Agentic AI systems.
+                </p>
+
+                {/* AWS Certification Badge */}
+                <div className="flex items-center gap-2 mb-8 px-4 py-2.5 rounded-xl w-fit" style={{ background: 'var(--color-accent-soft)', border: '1px solid var(--color-border)' }}>
+                    <span className="material-symbols-rounded text-lg leading-none flex items-center justify-center" style={{ color: 'var(--color-accent)', fontVariationSettings: '"FILL" 1' }}>verified</span>
+                    <span className="text-sm font-semibold leading-none flex items-center" style={{ color: 'var(--color-accent)' }}>AWS Certified Cloud Practitioner</span>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-6 md:gap-10">
+                    {aboutItems.map(({label}, key) => (
                         <div key={key} className="stat-item">
                             <div className="flex items-center md:mb-2">
                                 <span 
-                                    className="text-2xl font-bold md:text-4xl stat-number" 
+                                    className="text-3xl font-bold md:text-5xl stat-number" 
                                     ref={el => numbersRef.current[key] = el}
                                 >
                                     0
                                 </span>
-                                <span className="font-bold md:text-3xl stat-plus" style={{ color: 'var(--color-accent)' }}>+</span>
+                                <span className="text-2xl font-bold md:text-4xl stat-plus">+</span>
                             </div>
 
-                            <p className="text-sm" style={{ color: 'var(--color-text-tertiary)' }}>{label}</p>
+                            <p className="text-sm font-medium" style={{ color: 'var(--color-text-tertiary)' }}>{label}</p>
                         </div>
                         ))
                     }
