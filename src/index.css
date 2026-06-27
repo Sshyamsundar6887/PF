@@ -778,15 +778,6 @@ body::before {
 }
 
 /* Status badge */
-.hero-avatar {
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-  border: 2px solid var(--color-accent-glow);
-}
-
-.hero-avatar:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 20px var(--color-accent-glow);
-}
 
 .hero-image {
   display: none;

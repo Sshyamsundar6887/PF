@@ -107,16 +107,6 @@ const Hero = () => {
 
             <div className="hero-text">
                 <div className="flex items-center gap-3" ref={statusRef}> 
-                    <figure className="img-box w-9 h-9 rounded-lg hero-avatar">
-                        <img
-                         src={`${import.meta.env.BASE_URL}Law.jpg`}
-                         width={40}
-                         height={40}
-                         alt="Shyam Sundar portrait"
-                         className="img-cover"
-                        />
-                    </figure>
-
                     <div className="flex items-center gap-1.5 text-sm tracking-wide" style={{ color: 'var(--color-text-tertiary)' }}>
                         <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                             <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
@@ -148,13 +138,13 @@ const Hero = () => {
             </div>
 
             <div className="hero-image">
-                <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-gray-400 via-25% via-black-500/40 to-65% rounded-[60px] overflow-hidden hero-image-wrapper">
+                <figure className="w-full max-w-[480px] aspect-square ml-auto bg-gradient-to-t from-gray-400 via-25% via-black-500/40 to-65% rounded-[60px] overflow-hidden hero-image-wrapper">
                     <img
                      src={`${import.meta.env.BASE_URL}hero-banner.png`}
-                     width={656}
-                     height={800}
+                     width={1196}
+                     height={1196}
                      alt="Shyam Sundar"
-                     className="w-full hero-main-image"
+                     className="w-full h-full object-cover hero-main-image"
                      ref={heroImageRef}
                     />
                 </figure>
