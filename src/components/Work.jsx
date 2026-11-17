@@ -28,7 +28,7 @@ const works = [
   {
     id: 'work-3',
     imgSrc: `${import.meta.env.BASE_URL}rag-system.jpg`,
-    title: 'RAG Retrieval System',
+    title: 'RAG System',
     tags: ['Python', 'RAG', 'Vector Search', 'Jupyter'],
     projectLink: 'https://github.com/Sshyamsundar6887/RAG-test'
   },
@@ -48,7 +48,7 @@ const works = [
   },
   {
     id: 'work-6',
-    imgSrc: `${import.meta.env.BASE_URL}ejournal-app.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}e-journal-work-6.png`,
     title: 'E-Journal Digital App',
     tags: ['TypeScript', 'React', 'CSS3'],
     projectLink: 'https://github.com/Sshyamsundar6887/E-journal-'
