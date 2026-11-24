@@ -792,25 +792,18 @@ body::before {
 .hero-image-wrapper {
   position: relative;
   transition: transform var(--transition-slow);
-  border: 1px solid var(--glass-border);
+  isolation: isolate;
+  background: transparent;
 }
 
 .hero-image-wrapper::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  padding: 1px;
-  background: var(--gradient-accent);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.4;
-  pointer-events: none;
+  content: none;
 }
 
 .hero-main-image {
+  display: block;
+  transform-origin: center center;
+  object-position: center 42%;
   transition: transform 0.8s var(--ease-out);
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
 }

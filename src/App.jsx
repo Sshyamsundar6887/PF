@@ -231,7 +231,7 @@ const APP = () => {
             end: 'bottom top',
             scrub: true
           },
-          y: 50,
+          y: 0,
           scale: 1.02,
           ease: 'none'
         });

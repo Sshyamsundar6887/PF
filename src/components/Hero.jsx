@@ -138,7 +138,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-image">
-                <figure className="w-full max-w-[480px] aspect-square ml-auto bg-gradient-to-t from-gray-400 via-25% via-black-500/40 to-65% rounded-[60px] overflow-hidden hero-image-wrapper">
+                <figure className="w-full max-w-[480px] aspect-square ml-auto rounded-[60px] overflow-hidden hero-image-wrapper">
                     <img
                      src={`${import.meta.env.BASE_URL}hero-banner.png`}
                      width={1196}

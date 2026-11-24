@@ -25,67 +25,48 @@ const skillItem = [
     },
     {
       id: 'skill-3',
-      imgSrc: `${import.meta.env.BASE_URL}javascript.ico`,
-      label: 'JavaScript',
-      desc: 'Web Development'
-    },
-
-    {
-      id: 'skill-5',
-      imgSrc: `${import.meta.env.BASE_URL}mongodb.ico`,
-      label: 'MongoDB',
-      desc: 'Database'
-    },
-    {
-      id: 'skill-6',
       imgSrc: `${import.meta.env.BASE_URL}pytorch.svg`,
       label: 'PyTorch',
       desc: 'Deep Learning'
     },
     {
-      id: 'skill-7',
+      id: 'skill-4',
       imgSrc: `${import.meta.env.BASE_URL}pandas.svg`,
       label: 'Pandas',
       desc: 'Data Analysis'
     },
     {
-      id: 'skill-8',
+      id: 'skill-5',
       imgSrc: `${import.meta.env.BASE_URL}R.png`,
       label: 'R',
       desc: 'Data Analysis'
     },
     {
-      id: 'skill-9',
+      id: 'skill-6',
       imgSrc: `${import.meta.env.BASE_URL}aws.svg`,
       label: 'AWS',
       desc: 'Cloud Platform'
     },
     {
-      id: 'skill-10',
-      imgSrc: `${import.meta.env.BASE_URL}docker.svg`,
-      label: 'Docker',
-      desc: 'Containerization'
-    },
-    {
-      id: 'skill-11',
+      id: 'skill-7',
       imgSrc: `${import.meta.env.BASE_URL}jupyter.svg`,
       label: 'Jupyter',
       desc: 'Interactive Computing'
     },
     {
-      id: 'skill-12',
+      id: 'skill-8',
       imgSrc: `${import.meta.env.BASE_URL}opencv.svg`,
       label: 'OpenCV',
       desc: 'Computer Vision'
     },
     {
-      id: 'skill-13',
+      id: 'skill-9',
       imgSrc: `${import.meta.env.BASE_URL}keras.svg`,
       label: 'Keras',
       desc: 'Neural Networks'
     },
     {
-      id: 'skill-14',
+      id: 'skill-10',
       imgSrc: `${import.meta.env.BASE_URL}numpy.svg`,
       label: 'NumPy',
       desc: 'Scientific Computing'
